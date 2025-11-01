@@ -1,0 +1,35 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/NunitoSans_7pt-Regular.ttf") format("truetype");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/NunitoSans_7pt-Medium.ttf") format("truetype");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/NunitoSans_7pt-Bold.ttf") format("truetype");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "semiBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/NunitoSans_7pt-SemiBold.ttf") format("truetype");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

@@ -1,0 +1,26 @@
+.admin-layout {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.admin-layout__container {
+  display: flex;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.admin-layout__content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-layout__container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+}

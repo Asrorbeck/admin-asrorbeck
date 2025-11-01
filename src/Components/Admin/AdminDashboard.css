@@ -1,0 +1,235 @@
+.admin-dashboard {
+  width: 100%;
+}
+
+.admin-dashboard__wrapper {
+  width: 100%;
+}
+
+.admin-dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-dashboard__title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2rem;
+  color: #333333;
+  margin: 0;
+}
+
+.admin-dashboard__new-btn {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: medium;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.admin-dashboard__new-btn:hover {
+  opacity: 0.9;
+}
+
+.admin-dashboard__info {
+  margin-bottom: 20px;
+}
+
+.admin-dashboard__count {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.admin-dashboard__table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-dashboard__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-primary);
+}
+
+.admin-dashboard__table th {
+  padding: 12px 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #666666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-dashboard__table td {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333333;
+}
+
+.admin-dashboard__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-dashboard__title-cell {
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.admin-dashboard__title-link {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.admin-dashboard__title-link:hover {
+  color: #4285f4;
+}
+
+.admin-dashboard__date-cell {
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.admin-dashboard__actions-header {
+  text-align: right;
+  width: 100px;
+}
+
+.admin-dashboard__actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.admin-dashboard__action-btn {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #666666;
+}
+
+.admin-dashboard__action-btn--edit {
+  color: #4285f4;
+}
+
+.admin-dashboard__action-btn--edit:hover {
+  background-color: rgba(66, 133, 244, 0.1);
+  color: #4285f4;
+}
+
+.admin-dashboard__action-btn--delete {
+  color: #dc3545;
+}
+
+.admin-dashboard__action-btn--delete:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/* Dark mode styles */
+.dark .admin-dashboard__title {
+  color: #ffffff;
+}
+
+.dark .admin-dashboard__count {
+  color: #999999;
+}
+
+.dark .admin-dashboard__table th {
+  color: #999999;
+  border-bottom: 1px solid #333333;
+}
+
+.dark .admin-dashboard__table td {
+  color: #cccccc;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.dark .admin-dashboard__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dark .admin-dashboard__title-cell {
+  color: #ffffff;
+}
+
+.dark .admin-dashboard__title-link {
+  color: #ffffff;
+}
+
+.dark .admin-dashboard__title-link:hover {
+  color: #4285f4;
+}
+
+.dark .admin-dashboard__date-cell {
+  color: #999999;
+}
+
+.dark .admin-dashboard__action-btn {
+  color: #999999;
+}
+
+.dark .admin-dashboard__action-btn--edit:hover {
+  background-color: rgba(66, 133, 244, 0.15);
+}
+
+.dark .admin-dashboard__action-btn--delete:hover {
+  background-color: rgba(220, 53, 69, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 60px 0 30px;
+  }
+
+  .admin-dashboard__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-dashboard__title {
+    font-size: 1.75rem;
+  }
+
+  .admin-dashboard__table {
+    font-size: 0.9rem;
+  }
+
+  .admin-dashboard__table th,
+  .admin-dashboard__table td {
+    padding: 12px 0;
+  }
+
+  .admin-dashboard__title-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .admin-dashboard__actions {
+    gap: 4px;
+  }
+
+  .admin-dashboard__action-btn {
+    padding: 6px;
+  }
+}
+

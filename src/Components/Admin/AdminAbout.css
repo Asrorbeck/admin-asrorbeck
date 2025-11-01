@@ -1,0 +1,204 @@
+.admin-about {
+  width: 100%;
+}
+
+.admin-about__wrapper {
+  max-width: 1000px;
+}
+
+.admin-about__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-about__title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333333;
+  margin: 0;
+}
+
+.admin-about__back-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #4285f4;
+  color: #4285f4;
+  border-radius: 5px;
+  font-family: medium;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.admin-about__back-btn:hover {
+  background-color: #4285f4;
+  color: #ffffff;
+}
+
+.admin-about__form {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.admin-about__field {
+  margin-bottom: 25px;
+}
+
+.admin-about__label {
+  display: block;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.admin-about__editor-wrapper {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.admin-about__editor {
+  background: #ffffff;
+}
+
+.admin-about__editor .ql-editor {
+  min-height: 400px;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: #333333;
+}
+
+.admin-about__editor .ql-toolbar {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-about__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.admin-about__btn {
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-family: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.admin-about__btn--cancel {
+  background-color: transparent;
+  border: 2px solid #666666;
+  color: #666666;
+}
+
+.admin-about__btn--cancel:hover {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.admin-about__btn--save {
+  background-color: #4285f4;
+  color: #ffffff;
+}
+
+.admin-about__btn--save:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.admin-about__btn--save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Dark mode styles */
+.dark .admin-about__title {
+  color: #ffffff;
+}
+
+.dark .admin-about__form {
+  background: #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark .admin-about__label {
+  color: #ffffff;
+}
+
+.dark .admin-about__editor-wrapper {
+  background: #333333;
+  border-color: #444444;
+}
+
+.dark .admin-about__editor {
+  background: #333333;
+}
+
+.dark .admin-about__editor .ql-editor {
+  color: #ffffff;
+}
+
+.dark .admin-about__editor .ql-toolbar {
+  background: #2a2a2a;
+  border-color: #444444;
+}
+
+.dark .admin-about__editor .ql-stroke {
+  stroke: #ffffff;
+}
+
+.dark .admin-about__editor .ql-fill {
+  fill: #ffffff;
+}
+
+.dark .admin-about__editor .ql-picker-label {
+  color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .admin-about__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-about__title {
+    font-size: 2rem;
+  }
+
+  .admin-about__form {
+    padding: 20px;
+  }
+
+  .admin-about__editor .ql-editor {
+    min-height: 300px;
+  }
+
+  .admin-about__actions {
+    flex-direction: column;
+  }
+
+  .admin-about__btn {
+    width: 100%;
+  }
+}
+
