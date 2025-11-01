@@ -18,8 +18,6 @@ import AdminEdit from "./Components/Admin/AdminEdit";
 import AdminAbout from "./Components/Admin/AdminAbout";
 import AdminSettings from "./Components/Admin/AdminSettings";
 import AdminNavigation from "./Components/Admin/AdminNavigation";
-import AdminTranscription from "./Components/Admin/AdminTranscription";
-import AdminTranscriptionHistory from "./Components/Admin/AdminTranscriptionHistory";
 import "./index.css";
 import "./Fonts/Fonts.css";
 
@@ -71,11 +69,6 @@ function App() {
                 <Route path="edit/:id" element={<AdminEdit />} />
                 <Route path="about" element={<AdminAbout />} />
                 <Route path="navigation" element={<AdminNavigation />} />
-                <Route path="transcription" element={<AdminTranscription />} />
-                <Route
-                  path="transcription-history"
-                  element={<AdminTranscriptionHistory />}
-                />
                 <Route path="settings" element={<AdminSettings />} />
               </Route>
               <Route path="*" element={<Navigate to="/" replace />} />

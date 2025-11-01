@@ -42,7 +42,7 @@ const AdminNew = () => {
       author: "Asrorbek Tursunpulatov",
     };
 
-    const { data, error } = await blogService.create(newPost);
+    const { error } = await blogService.create(newPost);
 
     if (error) {
       alert("Xatolik: " + error.message);
